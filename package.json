@@ -1,18 +1,49 @@
 {
   "name": "tabby-k8s",
   "version": "1.0.0",
-  "main": "src/main.ts",
+  "description": "Tabby plugin for Kubernetes.",
+  "author": "Zoë Liebersbach",
   "license": "UNLICENSED",
-  "private": false,
+  "keywords": [
+    "tabby-plugin",
+    "k8s",
+    "kubernetes"
+  ],
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "webpack --progress --color",
+    "watch": "webpack --progress --color --watch"
+  },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
-    "@kubernetes/client-node": "^0.22.1"
+    "@kubernetes/client-node": "^0.22.1",
+    "shell-quote": "^1.8.1"
   },
   "devDependencies": {
+    "@angular/animations": "^15",
+    "@angular/common": "^15",
+    "@angular/core": "^15",
+    "@angular/forms": "^15",
+    "@angular/platform-browser": "^15",
+    "@eslint/js": "^9.13.0",
+    "@ng-bootstrap/ng-bootstrap": "^14",
+    "@types/node": "^22.9.0",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0",
+    "rxjs": "^7",
+    "style-loader": "^4.0.0",
+    "tabby-core": "*",
+    "tabby-settings": "*",
+    "tabby-terminal": "*",
+    "ts-loader": "^9.5.1",
     "tsx": "^4.19.2",
-    "typescript": "^5.6.3"
-  },
-  "scripts": {
-    "start": "tsx src/main.ts"
-  },
-  "type": "module"
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.12.1",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  }
 }
