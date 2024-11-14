@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Tabby plugin for Kubernetes.",
   "author": "Zoë Liebersbach",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "keywords": [
     "tabby-plugin",
     "k8s",
