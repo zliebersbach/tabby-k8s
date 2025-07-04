@@ -1,7 +1,8 @@
 {
   "name": "tabby-k8s",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Tabby plugin for Kubernetes.",
+  "homepage": "https://github.com/zliebersbach/tabby-k8s#readme",
   "author": "Zoë Liebersbach",
   "license": "MIT",
   "keywords": [
