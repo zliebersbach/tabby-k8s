@@ -100,7 +100,7 @@ export class K8sService {
         const k8sApi = this.kc.makeApiClient(CoreV1Api);
         const pods = await k8sApi.listPodForAllNamespaces();
 
-        return pods.body.items.flatMap(pod => {
+        return pods.items.flatMap(pod => {
             return pod.spec.containers.map(container => ({
                 namespace: pod.metadata.namespace,
                 podName: pod.metadata.name,
