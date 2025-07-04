@@ -91,6 +91,14 @@ export class K8sService {
     kc: KubeConfig
 
     constructor(log: LogService) {
+        if (process.platform === 'darwin') {
+            // Add Homebrew path for macOS
+            const brewPath = '/opt/homebrew/bin';
+            if (!process.env.PATH?.includes(brewPath)) {
+                process.env.PATH = `${brewPath}:${process.env.PATH}`;
+            }
+        }
+
         this.logger = log.create('k8s')
         this.kc = new KubeConfig();
         this.kc.loadFromDefault();
