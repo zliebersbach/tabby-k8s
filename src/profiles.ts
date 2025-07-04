@@ -48,7 +48,7 @@ export class K8sProfileProvider extends ProfileProvider<K8sProfile> {
                 type: 'k8s',
                 name: container.namespace + '/' + container.podName + '/' + container.containerName,
                 isBuiltin: true,
-                icon: 'fab fa-anchor',
+                icon: 'fa-solid fa-anchor',
                 options: {
                     namespace: container.namespace,
                     podName: container.podName,
@@ -61,7 +61,7 @@ export class K8sProfileProvider extends ProfileProvider<K8sProfile> {
                 name: 'Kubernetes container shell',
                 isBuiltin: true,
                 isTemplate: true,
-                icon: 'fab fa-anchor',
+                icon: 'fa-solid fa-anchor',
                 options: { },
             }
         ]
