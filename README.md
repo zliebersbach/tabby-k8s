@@ -1,5 +1,8 @@
 # `tabby-k8s` | Tabby Kubernetes Plugin
 
+![NPM Version](https://img.shields.io/npm/v/tabby-k8s)
+![NPM Downloads](https://img.shields.io/npm/dm/tabby-k8s)
+
 ## Overview
 
 This repository contains a Kubernetes plugin for [Tabby](https://tabby.sh), a modern terminal emulator. The plugin provides seamless integration with Kubernetes, allowing users to interact with containers in their Kubernetes clusters directly from Tabby.
@@ -12,7 +15,15 @@ This repository contains a Kubernetes plugin for [Tabby](https://tabby.sh), a mo
 
 ## Installation
 
-To install the `tabby-k8s` plugin, follow these steps:
+Simply install `tabby-k8s` from the Plugins screen in Tabby's settings.
+
+## Usage
+
+Once installed, you can access the Kubernetes plugin from the Tabby interface. Open the "Profiles & connections" window and choose a running container from the currently active Kubernetes context to start a terminal session.
+
+## Development
+
+To set up the `tabby-k8s` plugin for development, follow these steps:
 
 1. Ensure you have Tabby installed. You can download it from [here](https://tabby.sh).
 2. Clone this repository:
@@ -31,10 +42,6 @@ To install the `tabby-k8s` plugin, follow these steps:
     ```sh
     TABBY_PLUGINS=$(pwd) /Applications/Tabby.app/Contents/MacOS/Tabby
     ```
-
-## Usage
-
-Once installed, you can access the Kubernetes plugin from the Tabby interface. Open the "Profiles & connections" window and choose a running container from the currently active Kubernetes context to start a terminal session.
 
 ## Contributing
 
